@@ -1,0 +1,509 @@
+2024-01-22T03:33:45+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v1/oauth2/token
+    [method] => POST
+    [http_status] => 401
+    [request] => Array
+(
+    [grant_type] => client_credentials
+)
+
+    [error] => Array
+        (
+            [error] => invalid_client
+            [error_description] => Client Authentication failed
+        )
+
+)
+
+2024-01-22T06:57:53+00:00 INFO Webhook could not be configured during connect process. PayPal does not allow webhooks where the domain is localhost.
+2024-01-22T06:58:21+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v1/oauth2/token
+    [method] => POST
+    [http_status] => 401
+    [request] => Array
+(
+    [grant_type] => client_credentials
+)
+
+    [error] => Array
+        (
+            [error] => invalid_client
+            [error_description] => Client Authentication failed
+        )
+
+)
+
+2024-01-22T07:01:01+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.sandbox.paypal.com/v2/checkout/orders
+    [method] => POST
+    [http_status] => 422
+    [request] => PaymentPlugins\PayPalSDK\Order Object
+(
+    [_values:protected] => Array
+        (
+            [intent] => CAPTURE
+            [payer] => PaymentPlugins\PayPalSDK\Payer Object
+                (
+                    [_values:protected] => Array
+                        (
+                            [name] => PaymentPlugins\PayPalSDK\Name Object
+                                (
+                                    [_values:protected] => Array
+                                        (
+                                            [given_name] => Chiều
+                                            [surname] => Nguyễn
+                                        )
+
+                                    [mappings:protected] => Array
+                                        (
+                                        )
+
+                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                )
+
+                            [address] => PaymentPlugins\PayPalSDK\Address Object
+                                (
+                                    [_values:protected] => Array
+                                        (
+                                            [address_line_1] => 217 chu văn an
+                                            [address_line_2] => Phường Vĩnh Thanh
+                                            [admin_area_1] => 
+                                            [admin_area_2] => Rạch Giá
+                                            [postal_code] => 
+                                            [country_code] => VN
+                                        )
+
+                                    [mappings:protected] => Array
+                                        (
+                                        )
+
+                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                )
+
+                            [email_address] => sb-bqxqv29130903@business.example.com
+                        )
+
+                    [mappings:protected] => Array
+                        (
+                        )
+
+                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                )
+
+            [purchase_units] => PaymentPlugins\PayPalSDK\Collection Object
+                (
+                    [_values:protected] => Array
+                        (
+                            [0] => PaymentPlugins\PayPalSDK\PurchaseUnit Object
+                                (
+                                    [_values:protected] => Array
+                                        (
+                                            [amount] => PaymentPlugins\PayPalSDK\Amount Object
+                                                (
+                                                    [_values:protected] => Array
+                                                        (
+                                                            [value] => 32989000
+                                                            [currency_code] => VND
+                                                            [breakdown] => PaymentPlugins\PayPalSDK\Breakdown Object
+                                                                (
+                                                                    [_values:protected] => Array
+                                                                        (
+                                                                            [item_total] => PaymentPlugins\PayPalSDK\Money Object
+                                                                                (
+                                                                                    [_values:protected] => Array
+                                                                                        (
+                                                                                            [currency_code] => VND
+                                                                                            [value] => 29990000
+                                                                                        )
+
+                                                                                    [mappings:protected] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                )
+
+                                                                            [shipping] => PaymentPlugins\PayPalSDK\Amount Object
+                                                                                (
+                                                                                    [_values:protected] => Array
+                                                                                        (
+                                                                                            [currency_code] => VND
+                                                                                            [value] => 0
+                                                                                        )
+
+                                                                                    [mappings:protected] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                )
+
+                                                                            [tax_total] => PaymentPlugins\PayPalSDK\Money Object
+                                                                                (
+                                                                                    [_values:protected] => Array
+                                                                                        (
+                                                                                            [value] => 2999000
+                                                                                            [currency_code] => VND
+                                                                                        )
+
+                                                                                    [mappings:protected] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                )
+
+                                                                            [discount] => PaymentPlugins\PayPalSDK\Money Object
+                                                                                (
+                                                                                    [_values:protected] => Array
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [currency_code] => VND
+                                                                                        )
+
+                                                                                    [mappings:protected] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                )
+
+                                                                            [handling] => PaymentPlugins\PayPalSDK\Money Object
+                                                                                (
+                                                                                    [_values:protected] => Array
+                                                                                        (
+                                                                                            [currency_code] => VND
+                                                                                            [value] => 0
+                                                                                        )
+
+                                                                                    [mappings:protected] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                )
+
+                                                                        )
+
+                                                                    [mappings:protected] => Array
+                                                                        (
+                                                                        )
+
+                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [mappings:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                )
+
+                                            [items] => PaymentPlugins\PayPalSDK\Collection Object
+                                                (
+                                                    [_values:protected] => Array
+                                                        (
+                                                            [0] => PaymentPlugins\PayPalSDK\Item Object
+                                                                (
+                                                                    [_values:protected] => Array
+                                                                        (
+                                                                            [name] => Laptop Gaming MSI Crosshair 15 B12UEZ i7 12700H RAM 16GB M2.SSD 1TB 2K 165Hz NVIDIA®
+                                                                            [quantity] => 1
+                                                                            [unit_amount] => PaymentPlugins\PayPalSDK\Money Object
+                                                                                (
+                                                                                    [_values:protected] => Array
+                                                                                        (
+                                                                                            [currency_code] => VND
+                                                                                            [value] => 29990000
+                                                                                        )
+
+                                                                                    [mappings:protected] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                                )
+
+                                                                            [sku] => 842
+                                                                            [description] => Product ID: 515. Variation ID: 842
+                                                                        )
+
+                                                                    [mappings:protected] => Array
+                                                                        (
+                                                                        )
+
+                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [mappings:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                )
+
+                                            [shipping] => PaymentPlugins\PayPalSDK\Shipping Object
+                                                (
+                                                    [_values:protected] => Array
+                                                        (
+                                                            [name] => PaymentPlugins\PayPalSDK\Name Object
+                                                                (
+                                                                    [_values:protected] => Array
+                                                                        (
+                                                                            [full_name] => Chiều Nguyễn
+                                                                        )
+
+                                                                    [mappings:protected] => Array
+                                                                        (
+                                                                        )
+
+                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                )
+
+                                                            [address] => PaymentPlugins\PayPalSDK\Address Object
+                                                                (
+                                                                    [_values:protected] => Array
+                                                                        (
+                                                                            [address_line_1] => 217 chu văn an
+                                                                            [address_line_2] => Phường Vĩnh Thanh
+                                                                            [admin_area_1] => 
+                                                                            [admin_area_2] => Rạch Giá
+                                                                            [postal_code] => 
+                                                                            [country_code] => VN
+                                                                        )
+
+                                                                    [mappings:protected] => Array
+                                                                        (
+                                                                        )
+
+                                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [mappings:protected] => Array
+                                                        (
+                                                        )
+
+                                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                                )
+
+                                        )
+
+                                    [mappings:protected] => Array
+                                        (
+                                        )
+
+                                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                                )
+
+                        )
+
+                    [mappings:protected] => Array
+                        (
+                        )
+
+                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                )
+
+            [application_context] => PaymentPlugins\PayPalSDK\OrderApplicationContext Object
+                (
+                    [_values:protected] => Array
+                        (
+                            [shipping_preference] => SET_PROVIDED_ADDRESS
+                            [return_url] => http://localhost:8080/doannguyenvanchieu/wc-api/ppcp_checkout_return/?_checkoutnonce=26c81e4adf
+                            [cancel_url] => http://localhost:8080/doannguyenvanchieu/checkout/
+                            [brand_name] => NVCWebShop
+                        )
+
+                    [mappings:protected] => Array
+                        (
+                        )
+
+                    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+                )
+
+        )
+
+    [mappings:protected] => Array
+        (
+        )
+
+    [index:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+    [patchRequest:PaymentPlugins\PayPalSDK\AbstractObject:private] => 
+)
+
+    [error] => Array
+        (
+            [name] => UNPROCESSABLE_ENTITY
+            [details] => Array
+                (
+                    [0] => Array
+                        (
+                            [issue] => CURRENCY_NOT_SUPPORTED
+                            [description] => Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes.
+                        )
+
+                )
+
+            [message] => The requested action could not be performed, semantically incorrect, or failed business validation.
+            [debug_id] => 1ec49976bbed4
+            [links] => Array
+                (
+                    [0] => Array
+                        (
+                            [href] => https://developer.paypal.com/docs/api/orders/v2/#error-CURRENCY_NOT_SUPPORTED
+                            [rel] => information_link
+                        )
+
+                )
+
+        )
+
+)
+
+2024-01-22T07:01:01+00:00 ERROR Error creating PayPal order. Msg: Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes. Params: Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Chiều
+                    [surname] => Nguyễn
+                )
+
+            [address] => Array
+                (
+                    [address_line_1] => 217 chu văn an
+                    [address_line_2] => Phường Vĩnh Thanh
+                    [admin_area_1] => 
+                    [admin_area_2] => Rạch Giá
+                    [postal_code] => 
+                    [country_code] => VN
+                )
+
+            [email_address] => sb-bqxqv29130903@business.example.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 32989000
+                            [currency_code] => VND
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => VND
+                                            [value] => 29990000
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => VND
+                                            [value] => 0
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 2999000
+                                            [currency_code] => VND
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0
+                                            [currency_code] => VND
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => VND
+                                            [value] => 0
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Laptop Gaming MSI Crosshair 15 B12UEZ i7 12700H RAM 16GB M2.SSD 1TB 2K 165Hz NVIDIA®
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => VND
+                                            [value] => 29990000
+                                        )
+
+                                    [sku] => 842
+                                    [description] => Product ID: 515. Variation ID: 842
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => Chiều Nguyễn
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => 217 chu văn an
+                                    [address_line_2] => Phường Vĩnh Thanh
+                                    [admin_area_1] => 
+                                    [admin_area_2] => Rạch Giá
+                                    [postal_code] => 
+                                    [country_code] => VN
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => SET_PROVIDED_ADDRESS
+            [return_url] => http://localhost:8080/doannguyenvanchieu/wc-api/ppcp_checkout_return/?_checkoutnonce=26c81e4adf
+            [cancel_url] => http://localhost:8080/doannguyenvanchieu/checkout/
+            [brand_name] => NVCWebShop
+        )
+
+)
+

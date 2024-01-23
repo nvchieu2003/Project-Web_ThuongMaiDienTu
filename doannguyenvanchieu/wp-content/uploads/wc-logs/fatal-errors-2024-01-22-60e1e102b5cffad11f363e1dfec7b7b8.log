@@ -1,0 +1,10 @@
+2024-01-22T08:56:04+00:00 CRITICAL Uncaught Error: Call to undefined function new\Composer\Autoload\ClassLoader() in C:\xampp\htdocs\doannguyenvanchieu\wp-content\plugins\echbay-momo-woo\vendor\composer\autoload_real.php:12
+Stack trace:
+#0 C:\xampp\htdocs\doannguyenvanchieu\wp-content\plugins\echbay-momo-woo\vendor\autoload.php(3): ComposerAutoloaderInit4mc3uo77pbgarf3eptgt05jqmd::getLoader()
+#1 C:\xampp\htdocs\doannguyenvanchieu\wp-content\plugins\echbay-momo-woo\momo.php(15): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\doannguyenvanchieu\wp-admin\includes\plugin.php(2318): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\doannguyenvanchieu\wp-admin\includes\plugin.php(663): plugin_sandbox_scrape('echbay-momo-woo...')
+#4 C:\xampp\htdocs\doannguyenvanchieu\wp-admin\plugins.php(58): activate_plugin('echbay-momo-woo...', 'http://localhos...', false)
+#5 {main}
+  thrown in C:\xampp\htdocs\doannguyenvanchieu\wp-content\plugins\echbay-momo-woo\vendor\composer\autoload_real.php on line 12
+

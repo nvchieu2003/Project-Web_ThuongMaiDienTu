@@ -1,0 +1,10 @@
+2024-01-22T07:39:28+00:00 ERROR Paypal onboarding error : invalid_authz_code : Authorization code not found in cache
+----
+2024-01-22T07:45:53+00:00 ERROR Paypal onboarding error : invalid_authz_code : Authorization code not found in cache
+----
+2024-01-22T07:48:37+00:00 ERROR Paypal onboarding error : invalid_grant : Code verifier invalid size should be between 43 and 128 characters
+----
+2024-01-22T07:48:40+00:00 ERROR Paypal onboarding error : invalid_authz_code : Authorization code not found in cache
+----
+2024-01-22T07:48:42+00:00 ERROR Paypal onboarding error : invalid_authz_code : Authorization code not found in cache
+----
